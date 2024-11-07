@@ -1,0 +1,38 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.image-container {
+  height: 384px; /* Equivalent to h-96 in Tailwind */
+  width: 384px;  /* Equivalent to w-96 in Tailwind */
+  border-radius: 50%; /* Equivalent to rounded-full in Tailwind */
+  object-fit: cover; /* Ensures the image doesn’t get distorted */
+  overflow: hidden; /* Ensures the button doesn’t spill outside the circle */
+  position: relative;
+}
+
+.edit-button {
+  position: absolute;
+  top: 325px; /* Space from the top of the circle */
+  left: 325px; /* Space from the right side of the circle */
+  background-color: #ffffff; /* Optional background color for visibility */
+  border: none;
+  cursor: pointer;
+  padding: 8px; /* Optional: padding for click area */
+  border-radius: 50%; /* Make button circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Ensures the button doesn’t spill outside the circle */
+}
